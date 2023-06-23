@@ -1,0 +1,21 @@
+name: compare-radiative-transfer
+channels:
+ - conda-forge
+ - default
+dependencies:
+ - python==3.10
+
+  ################################################################
+  # Imported dependencies and extensions (and related typestubs) #
+  ################################################################
+
+# - libgfortran~=3.0
+ - jupyterlab
+# - numpy~=1.24
+ - pandas
+ - pytest
+
+ # Installing beer_lambert_rt and seaice_rt from local
+ - pip
+ - pip:
+   - /home/apbarret/src/beer_lambert_rt
