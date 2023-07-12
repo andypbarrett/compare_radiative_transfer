@@ -9,13 +9,18 @@ dependencies:
   # Imported dependencies and extensions (and related typestubs) #
   ################################################################
 
-# - libgfortran~=3.0
+ - libgfortran~=3.0
  - jupyterlab
-# - numpy~=1.24
+ - numpy~=1.24
  - pandas
  - pytest
+ - dask  # for beer_lambert_rt
+ - scipy
+ - xarray
+ - matplotlib
 
  # Installing beer_lambert_rt and seaice_rt from local
  - pip
  - pip:
    - /home/apbarret/src/beer_lambert_rt
+   - /home/apbarret/src/seaice_radiative_transfer
